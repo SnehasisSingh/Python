@@ -11,7 +11,7 @@ max_worker=100000
 auto_terminate_min=43200  # 43200 Minitues 
 #########################################################################################
 try:
-    df = pd.read_excel('excel_extract_file (1).xlsx')
+    df = pd.read_excel('excel_extract_file (1).xlsx') #file path of excel sheet
     json_data = df.to_json(orient='records')
     with open('converted_json.json','w') as f:
         f.write(json_data)
