@@ -19,13 +19,13 @@ try:
    
     
 except FileNotFoundError:
-    print("File 'resource_groups.xlsx' not found.")
+    print("File 'resource_groups.xlsx' not found.") #provide the excel sheet path
 except Exception as e:
     print("An error occurred:", e)
 
 
 # Read data from JSON file
-with open('converted_json.json', 'r') as json_file:
+with open('converted_json.json', 'r') as json_file: # provide the path the code where a json file will generate
     data = json.load(json_file)
 
 time.sleep(3) #avoid  error
